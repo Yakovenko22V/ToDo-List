@@ -18,7 +18,7 @@ function BtnImportance(props) {
 
 
   return (
-    <button className='btn-style importance' onClick={() => isTaskImportant(id)}>&#128681;</button>
+    <button className='btn-style importance' onClick={() => isTaskImportant(id)}><span className="xx">&#128681;</span></button>
   )
 }
 

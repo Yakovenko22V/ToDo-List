@@ -12,7 +12,7 @@ function BtnDelete(props) {
     }
 
     return (
-        <button className='btn-style delete' onClick={() => deleteItem(id)}>&#10060;</button>
+        <button className='btn-style delete' onClick={() => deleteItem(id)}>&#10007;</button>
     )
 };
 

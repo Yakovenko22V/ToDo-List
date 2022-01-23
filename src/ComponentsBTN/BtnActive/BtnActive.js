@@ -16,7 +16,7 @@ function BtnActive(props) {
       };
 
     const classNameBTN = (item.isTaskActive === true) ? 'btn-style done' : 'btn-style notDone'
-    const changeText = (item.isTaskActive === true) ? '\u2705' : '\u21BB'
+    const changeText = (item.isTaskActive === true) ? '\u2713' : '\u21BB'
 
     return (
         <button className={classNameBTN} onClick={() => isTasksActive(id)}>{changeText}</button>
