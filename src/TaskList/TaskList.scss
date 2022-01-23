@@ -68,3 +68,11 @@
   color: #000000;
   height: 0.5;
 }
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  .listOfTask {
+    .tasks {
+      flex-direction: column;
+    }
+  }
+}

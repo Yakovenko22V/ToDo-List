@@ -1,7 +1,7 @@
 export const loadData = () => new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve(arrTask);
-    }, 2000);
+    }, 1000);
 })
 
 const arrTask = [

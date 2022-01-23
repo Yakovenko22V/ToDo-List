@@ -35,7 +35,7 @@ const Form = () => {
     return (
         <div className='tools-to-add'>
             <input placeholder='Create a task' onChange={(e) => getAdditionalText(e.target.value)}></input>
-            <button className={setClassName()} disabled={disableBtnProps()} onClick={() => setAdditionalTask(inputTextForAdd)}>Add task</button>
+            <button className={setClassName()} disabled={disableBtnProps()} onClick={() => setAdditionalTask(inputTextForAdd)}>Add</button>
         </div>
     )
 }
