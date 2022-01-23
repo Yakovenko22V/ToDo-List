@@ -6,7 +6,7 @@ export const loadData = () => new Promise((resolve, reject) => {
 
 const arrTask = [
     {
-      nameOfTask: 'To pay utility bills',
+      nameOfTask: 'Pay utility bills',
       idOfTask: 1,
       flagOfImportance: true,
       isTaskActive: true,
