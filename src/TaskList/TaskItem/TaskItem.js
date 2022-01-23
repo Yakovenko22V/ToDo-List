@@ -5,10 +5,10 @@ function TaskItem(props) {
     const {itemT, itemN, title} = props
     return (
         <div>{title} '
-            <span className={(itemT.length) ? 'span-task' : (itemT ? 'span-import green' : 'span-import black')} id={(itemN===false) ? 'non-active-style' : ''}>
+            <span className={(itemT.length) ? 'span-task' : (itemT ? 'span-import red' : 'span-import black')} id={(itemN===false) ? 'non-active-style' : ''}>
             {
             (itemT.length) ?
-            itemT : (itemT ? 'Да' : 'Нет')
+            itemT : (itemT ? 'High' : 'Low')
             }
              </span>'
         </div>

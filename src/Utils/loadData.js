@@ -6,21 +6,21 @@ export const loadData = () => new Promise((resolve, reject) => {
 
 const arrTask = [
     {
-      nameOfTask: 'Оплатить комунальные счета',
+      nameOfTask: 'To pay utility bills',
       idOfTask: 1,
       flagOfImportance: true,
       isTaskActive: true,
     },
 
     {
-      nameOfTask: 'Сделать домашнее задание на курсы SkillUp',
+      nameOfTask: 'Do homework for courses SkillUp',
       idOfTask: 2,
       flagOfImportance: true,
       isTaskActive: true,
     },
 
     {
-      nameOfTask: 'Посмотреть новый фильм Marvel',
+      nameOfTask: 'Watch the new Marvel movie',
       idOfTask: 3,
       flagOfImportance: false,
       isTaskActive: false,

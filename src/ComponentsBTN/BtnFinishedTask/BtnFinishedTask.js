@@ -17,7 +17,7 @@ function BtnFinishedTask() {
     }
 
     return (
-        <button className={newClassName} onClick={() => arrTaskFilter('closed')}>Завершенные задачи</button>
+        <button className={newClassName} onClick={() => arrTaskFilter('closed')}>Completed tasks</button>
     )
 };
 

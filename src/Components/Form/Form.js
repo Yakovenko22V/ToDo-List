@@ -30,12 +30,12 @@ const Form = () => {
     const disableBtnProps = () => (inputTextForAdd === undefined ||
         inputTextForAdd === '' ||
         inputTextForAdd.replace(/\s/g, "") === "") ? true : false;
-    const setClassName = () => (disableBtnProps() === true) ? 'ds' : 'btn-style'
+    const setClassName = () => (disableBtnProps() === true) ? 'ds' : 'btn-style btnForm'
 
     return (
         <div className='tools-to-add'>
-            <input placeholder='Создать задачу' onChange={(e) => getAdditionalText(e.target.value)}></input>
-            <button className={setClassName()} disabled={disableBtnProps()} onClick={() => setAdditionalTask(inputTextForAdd)}>Добавить</button>
+            <input placeholder='Create a task' onChange={(e) => getAdditionalText(e.target.value)}></input>
+            <button className={setClassName()} disabled={disableBtnProps()} onClick={() => setAdditionalTask(inputTextForAdd)}>Add task</button>
         </div>
     )
 }

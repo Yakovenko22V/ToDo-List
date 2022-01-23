@@ -17,7 +17,7 @@ function BtnAllActiveTask() {
   }
 
   return (
-    <button className={newClassName} onClick={() => arrTaskFilter('allActive')}>Активные задачи</button>
+    <button className={newClassName} onClick={() => arrTaskFilter('allActive')}>Active tasks</button>
   )
 };
 

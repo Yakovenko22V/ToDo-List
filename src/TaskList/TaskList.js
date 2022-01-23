@@ -13,8 +13,8 @@ function TaskList({ item }) {
             <ul className='listOfTask'>
                 <div className="tasks">
                     <div className={(item.isTaskActive === false) ? 'non-active-style' : ''}>
-                        <TaskItem itemT={item.nameOfTask} title='Задача:' />
-                        <TaskItem itemT={item.flagOfImportance} itemN={item.isTaskActive} title='Важна ли задача:' />
+                        <TaskItem itemT={item.nameOfTask} title='Task:' />
+                        <TaskItem itemT={item.flagOfImportance} itemN={item.isTaskActive} title='Importance:' />
                     </div>
                     <div className="btnSection">
                         <BtnDelete id={item.idOfTask} />

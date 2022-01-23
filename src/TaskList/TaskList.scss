@@ -6,6 +6,7 @@
   margin: 8px 5px 8px 10px;
   border-radius: 10px;
   font-family: "Work Sans", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   background-size: 200% auto;
@@ -46,8 +47,8 @@
   hyphens: auto;
 }
 
-.span-import.green {
-  color: green;
+.span-import.red {
+  color: red;
   font-weight: bold;
 }
 

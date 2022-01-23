@@ -16,7 +16,7 @@ function BtnAllTask() {
     newClassName = 'btn-style active'
   }
   return (
-    <button className={newClassName} onClick={() => arrTaskFilter('all')}>Все задачи</button>
+    <button className={newClassName} onClick={() => arrTaskFilter('all')}>All Tasks</button>
   )
 };
 

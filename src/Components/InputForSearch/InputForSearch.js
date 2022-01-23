@@ -11,7 +11,7 @@ function InputForSearch() {
     };
 
     return (
-        <input className='inputData' placeholder='Поиск задач' onChange={(e) => filteredByInput(e.target.value)}></input>
+        <input className='inputData' placeholder='Search for a task...' onChange={(e) => filteredByInput(e.target.value)}></input>
     )
 }
 
