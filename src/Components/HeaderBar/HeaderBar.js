@@ -1,9 +1,8 @@
 import React from 'react'
-
+import './headerBar.scss'
 import BtnAllTask from '../../ComponentsBTN/BtnAllTask/BtnAllTask.js'
 import BtnAllActiveTask from '../../ComponentsBTN/BtnAllActiveTask/BtnAllActiveTask'
 import BtnFinishedTask from '../../ComponentsBTN/BtnFinishedTask/BtnFinishedTask'
-import Form from '../Form/Form'
 import InputForSearch from '../InputForSearch/InputForSearch'
 
 function HeaderBar() {
@@ -17,9 +16,6 @@ function HeaderBar() {
                     <BtnAllActiveTask />
                     <BtnFinishedTask />
                 </div>
-            </div>
-            <div className='add-task-block'>
-                <Form />
             </div>
         </div>
     )

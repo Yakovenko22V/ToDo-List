@@ -1,22 +1,19 @@
 import React from "react";
-import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { actions } from '../../store/reducers/statesReducer/reducerArrTask'
+import { actions } from '../../store/reducers/statesReducer/reducerArrTask';
+import './btnDelete.scss'
 
 function BtnDelete(props) {
-    const {id} = props
+    const { id } = props
     const dispatch = useDispatch();
 
     function deleteItem(id) {
         dispatch(actions.removeTodo(id))
     }
+
     return (
-        <button className='btn-style' onClick={() => deleteItem(id)}>Удалить задачу</button>
+        <button className='btn-style delete' onClick={() => deleteItem(id)}>&#10060;</button>
     )
 };
-
-BtnDelete.propTypes = {
-    id: PropTypes.number.isRequired
-}
 
 export default BtnDelete;

@@ -1,0 +1,21 @@
+.search-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+        margin-top: 8px;
+        padding: 0 0 0 15px;
+        width: 25%;
+        min-height: 30px;
+        height: 4vh;
+        line-height: 40px;
+        font-size: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .buttons-sort{
+        margin-top: 8px;
+    }
+}

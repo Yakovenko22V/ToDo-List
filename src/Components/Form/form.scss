@@ -1,0 +1,41 @@
+.tools-to-add {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 5vh auto;
+    border: 1px solid black;
+    box-shadow: 6px 6px #013f28, 12px 12px #01281a;
+
+    input {
+        margin: 5px 0 0 8vw;
+        padding: 0 0 0 15px;
+        width: 60%;
+        min-height: 30px;
+        height: 5vh;
+        line-height: 40px;
+        font-size: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-style {
+        background-image: linear-gradient(to right, #9eefe1 0%, #138808 51%, #9eefe1 100%);
+    }
+
+    .ds {
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        padding: 5px 10px;
+        margin: 8px 10px;
+        border-radius: 10px;
+        font-family: "Work Sans", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-size: 200% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s linear;
+        background-color: #537162;
+        height: 30px;
+    }
+}

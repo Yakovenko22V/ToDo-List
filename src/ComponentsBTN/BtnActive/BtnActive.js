@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { actions } from '../../store/reducers/statesReducer/reducerArrTask'
+import { actions } from '../../store/reducers/statesReducer/reducerArrTask';
+import './btnActive.scss'
 
 function BtnActive(props) {
     const {id, item } = props
@@ -14,10 +15,11 @@ function BtnActive(props) {
         dispatch(actions.setArrTask(activityOfEl))
       };
 
-    const changeText = (item.isTaskActive === true) ? "Деактивировать" : "Активировать"
+    const classNameBTN = (item.isTaskActive === true) ? 'btn-style done' : 'btn-style notDone'
+    const changeText = (item.isTaskActive === true) ? '\u2705' : '\u21BB'
 
     return (
-        <button className='btn-style' onClick={() => isTasksActive(id)}>{changeText}</button>
+        <button className={classNameBTN} onClick={() => isTasksActive(id)}>{changeText}</button>
     )
 };
 

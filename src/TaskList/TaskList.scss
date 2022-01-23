@@ -1,42 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap");
 
-  .btn-style {
-    text-decoration: none;
-    display: inline-block;
-    color:black;
-    padding: 5px 10px;
-    margin: 10px 20px;
-    border-radius: 10px;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
-    background-size: 200% auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-    transition:all .5s linear;
+.btn-style {
+  min-width: 44px;
+  padding: 5px 10px;
+  margin: 8px 5px 8px 10px;
+  border-radius: 10px;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s linear;
+  height: 30px;
 
-      &:hover{
-        background-position: right center;
-      }
-      &.active {
-        background-image: none;
-        color: white;
-        top: 1px;
-        background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
-        box-shadow:
-         0 0 1px rgba(0,0,0,.5) inset,
-         0 2px 3px rgba(0,0,0,.5) inset,
-         0 1px 1px rgba(255,255,255,.1);
-      }
+  &:hover {
+    background-position: right center;
   }
+  &.active {
+    background-image: none;
+    color: white;
+    top: 1px;
+    background: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.5) inset, 0 1px 1px rgba(255, 255, 255, 0.1);
+  }
+}
 
-.listOfTask{
+.listOfTask {
   font-size: 20px;
-};
-  
-.span-task{
+  margin: 5vh 0;
+
+  .tasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .btnSection {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.span-task {
   font-weight: bold;
-};
+  hyphens: auto;
+}
 
 .span-import.green {
   color: green;
@@ -47,31 +55,15 @@
   color: black;
 }
 
-.non-active-style{
-  color: rgba(0,0,0,0.4);
+.non-active-style {
+  color: rgba(0, 0, 0, 0.4);
 }
-  
-#non-active-style{
-  color: rgba(0,0,0,0.4);
-};
 
-.hrLine{
+#non-active-style {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.hrLine {
   color: #000000;
-  height: .5;
-}
-
-.ds{
-  text-decoration: none;
-    display: inline-block;
-    color:black;
-    padding: 5px 10px;
-    margin: 10px 20px;
-    border-radius: 10px;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-size: 200% auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-    transition:all .5s linear;
-  background-color: gray;
+  height: 0.5;
 }

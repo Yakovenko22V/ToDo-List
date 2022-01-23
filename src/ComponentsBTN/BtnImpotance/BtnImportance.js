@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { actions } from '../../store/reducers/statesReducer/reducerArrTask'
+import { actions } from '../../store/reducers/statesReducer/reducerArrTask';
+import './btnImportance.scss'
 
 
 function BtnImportance(props) {
@@ -18,7 +19,7 @@ function BtnImportance(props) {
 
       
     return (
-        <button className='btn-style' onClick={() => isTaskImportant(id)}>Пометить задачу как важнаю</button>
+        <button className='btn-style importance' onClick={() => isTaskImportant(id)}>&#128681;</button>
     )
 }
 

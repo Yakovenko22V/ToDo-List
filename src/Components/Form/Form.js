@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { actions } from '../../store/reducers/statesReducer/reducerArrTask'
+import { actions } from '../../store/reducers/statesReducer/reducerArrTask';
+import './form.scss'
 
 const Form = () => {
     const [inputTextForAdd, setInputTextForAdd] = useState('');
@@ -34,7 +35,7 @@ const Form = () => {
     return (
         <div className='tools-to-add'>
             <input placeholder='Создать задачу' onChange={(e) => getAdditionalText(e.target.value)}></input>
-            <button className={setClassName()} disabled={disableBtnProps()} onClick={() => setAdditionalTask(inputTextForAdd)}>Добавить задачу</button>
+            <button className={setClassName()} disabled={disableBtnProps()} onClick={() => setAdditionalTask(inputTextForAdd)}>Добавить</button>
         </div>
     )
 }

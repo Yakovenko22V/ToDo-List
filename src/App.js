@@ -9,6 +9,7 @@ import { filterForArray } from './functions/filterForArray/filterForArray';
 import HeaderBar from './Components/HeaderBar/HeaderBar';
 import { useDispatch, useSelector } from 'react-redux';
 import { actions } from './store/reducers/statesReducer/reducerArrTask';
+import Form from './Components/Form/Form';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -27,18 +28,20 @@ const App = () => {
 
   return (
     <div className='parent-block'>
-      <div className='todo-list'><h1>TODO-List</h1></div>
-      <div className='wrapper'>
-        <HeaderBar />
-        <div className='task-container'>
-          {
-            filterForArray({ array: store.arrTask, condition1: store.displayedList, condition2: store.filteredByInput }).map((item) =>
-              <TaskList key={item.idOfTask} item={item} />
-            )
-          }
+      <HeaderBar />
+      <div className='box'>
+        <div className='todo-list'><h1>TODO-List</h1></div>
+        <div className='wrapper'>
+          <Form />
+          <div className='task-container'>
+            {
+              filterForArray({ array: store.arrTask, condition1: store.displayedList, condition2: store.filteredByInput }).map((item) =>
+                <TaskList key={item.idOfTask} item={item} />
+              )
+            }
+          </div>
         </div>
       </div>
-      <div className='fonpicture'></div>
     </div>
   )
 }
